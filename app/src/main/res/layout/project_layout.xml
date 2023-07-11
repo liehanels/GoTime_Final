@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvProjectName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Name"
+        android:textColor="#012035"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ImgProject" />
+
+    <TextView
+        android:id="@+id/tvProjectDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Description"
+        android:textColor="#FC013A65"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ImgProject"
+        app:layout_constraintEnd_toEndOf="@+id/tvProjectName"
+        app:layout_constraintStart_toStartOf="@+id/tvProjectName"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjectName" />
+
+    <ImageView
+        android:id="@+id/ImgProject"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/tvProjectDescription"
+        app:layout_constraintEnd_toStartOf="@+id/tvProjectName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvProjectName"
+        app:srcCompat="@drawable/gotime_logo"
+        tools:srcCompat="@tools:sample/avatars[11]" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <Button
+        android:id="@+id/btnViewStats"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@id/tvProjectDescription"
+        app:layout_constraintEnd_toStartOf="@id/btnAddHours"
+        app:layout_constraintStart_toStartOf="@id/tvProjectDescription"
+        app:layout_constraintTop_toTopOf="@id/tvProjectName" />
+
+    <ImageView
+        android:id="@+id/ivViewStats"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnViewStats"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_view" />
+
+    <Button
+        android:id="@+id/btnAddHours"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnViewStats"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditProject"
+        app:layout_constraintStart_toEndOf="@+id/btnViewStats"
+        app:layout_constraintTop_toTopOf="@id/btnViewStats" />
+
+    <ImageView
+        android:id="@+id/ivAddHours"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddHours"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddHours"
+        app:layout_constraintStart_toStartOf="@id/btnAddHours"
+        app:layout_constraintTop_toTopOf="@+id/btnAddHours"
+        app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+    <Button
+        android:id="@+id/btnEditProject"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAddHours"
+        app:layout_constraintTop_toTopOf="@+id/btnAddHours" />
+
+    <ImageView
+        android:id="@+id/ivEditProject"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnEditProject"
+        app:layout_constraintEnd_toEndOf="@id/btnEditProject"
+        app:layout_constraintStart_toStartOf="@id/btnEditProject"
+        app:layout_constraintTop_toTopOf="@id/btnEditProject"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

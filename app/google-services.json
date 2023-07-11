@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723158331643",
+    "project_id": "gotimeapp-group3",
+    "storage_bucket": "gotimeapp-group3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723158331643:android:7c14884d91ab089e1f005e",
+        "android_client_info": {
+          "package_name": "com.example.gotime_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723158331643-3728oijr89trbf6lsupmn835vd45ucg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBujM05ppeJyp1tPb7jlGVXtPL6rWasuno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723158331643-3728oijr89trbf6lsupmn835vd45ucg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
